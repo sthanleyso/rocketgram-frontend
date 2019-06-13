@@ -1,16 +1,12 @@
 import { createGlobalStyle } from 'styled-components';
+import Normalize from 'styled-normalize';
 
 const GlobalStyle = createGlobalStyle`
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  ${Normalize}
 
   body {
     background-color: #fafafa;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
+    font-family: 'Comfortaa', cursive;
     -webkit-font-smoothing: antialiased !important;
   }
 `;
