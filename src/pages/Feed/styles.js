@@ -26,7 +26,7 @@ export const PostList = styled.section`
   footer {
     padding: 20px;
 
-    .actions {
+    div {
       margin-bottom: 10px;
 
       img {
@@ -52,11 +52,7 @@ export const UserInfo = styled.div`
   display: flex;
   flex-direction: column;
 
-  span {
-    font-size: 0.8125em;
-  }
-
-  .place {
+  span:last-child {
     font-size: 0.6875em;
     color: #666666;
     margin-top: 3px;
