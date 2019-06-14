@@ -19,6 +19,10 @@ export default class Feed extends Component {
     this.setState({ feed: response.data });
   }
 
+  handleLike = id => {
+    api.post(`/posts/${id}/like`);
+  }
+
   render() {
     const { feed } = this.state;
 
@@ -38,9 +42,11 @@ export default class Feed extends Component {
 
             <footer>
               <div>
-                <img src={like} alt="" />
-                <img src={comment} alt="" />
-                <img src={send} alt="" />
+                <button type="button" onClick={() => this.handleLike(post._id)}>
+                  <img src={like} alt="Curtir" />
+                </button>
+                <img src={comment} alt="Comentar" />
+                <img src={send} alt="Enviar" />
               </div>
 
               <strong>{post.likes} curtidas</strong>

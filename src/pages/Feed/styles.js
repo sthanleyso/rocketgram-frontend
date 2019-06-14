@@ -27,7 +27,16 @@ export const PostList = styled.section`
     padding: 20px;
 
     div {
+      display: flex;
+      align-items: center;
       margin-bottom: 10px;
+
+      button {
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+        height: 20px;
+      }
 
       img {
         height: 20px;
